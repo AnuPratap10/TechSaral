@@ -38,12 +38,10 @@ nav ul li a {
   text-decoration: none;
 }
 
-
 nav ul li:nth-child(1):after,
 nav ul li:nth-child(3):after {
   content: "\25BE";
 }
-
 
 nav ul li:nth-child(1) ul,
 nav ul li:nth-child(3) ul {
@@ -58,7 +56,7 @@ nav ul li:nth-child(3) ul {
 
 nav ul li:hover:nth-child(1) ul,
 nav ul li:hover:nth-child(3) ul {
-  padding:5px;
+  padding: 5px;
   display: block;
 }
 
@@ -71,16 +69,15 @@ nav ul li ul li a {
   text-decoration: none;
   font-size: 13px;
   color: white;
-  
 }
 
 a {
   text-decoration: none;
 }
 a:hover {
-  color: red;
+  color: rgb(244, 73, 73);
+  text-decoration: underline;
 }
-
 
 /* Main Section CSS */
 
@@ -91,7 +88,7 @@ main {
   align-items: center;
   text-align: center;
 }
-main section h2{
+main section h2 {
   color: rgb(87, 101, 80);
 }
 
@@ -140,9 +137,20 @@ footer > div + p {
     margin: 10px 0;
   }
 
+
   nav > ul > li {
+    position: relative;
+  }
+  nav ul li ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul li:hover ul {
     display: block;
-    margin: 10px 0;
   }
 
   footer div div {
@@ -150,6 +158,9 @@ footer > div + p {
     width: 100%;
     margin-top: 10px;
   }
+
+
+  
   footer div {
     flex-direction: column;
   }
