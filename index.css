@@ -51,7 +51,7 @@ nav ul li:nth-child(3) ul {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(121, 7, 7, 0.5);
 }
 
 nav ul li:hover:nth-child(1) ul,
@@ -137,20 +137,18 @@ footer > div + p {
     margin: 10px 0;
   }
 
-
   nav > ul > li {
-    position: relative;
+    margin: 10px 0;
+    display: block;
   }
-  nav ul li ul {
-    position: absolute;
-    top: 100%;
+
+  nav ul li:hover:nth-child(1) ul,
+  nav ul li:hover:nth-child(3) ul {
     display: none;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
   nav ul li:hover ul {
-    display: block;
+    display: none;
   }
 
   footer div div {
@@ -159,8 +157,6 @@ footer > div + p {
     margin-top: 10px;
   }
 
-
-  
   footer div {
     flex-direction: column;
   }
